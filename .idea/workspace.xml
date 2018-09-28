@@ -38,8 +38,8 @@
       <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2025">
-              <caret line="75" column="43" lean-forward="true" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+            <state relative-caret-position="162">
+              <caret line="6" column="76" lean-forward="true" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
               <folding>
                 <element signature="e#1451#1462#0" expanded="true" />
                 <element signature="e#1501#1518#0" expanded="true" />
@@ -205,6 +205,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Nation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -329,7 +336,7 @@
       <option name="presentableId" value="Default" />
       <updated>1538058786607</updated>
       <workItem from="1538058791267" duration="4427000" />
-      <workItem from="1538137841821" duration="9818000" />
+      <workItem from="1538137841821" duration="9971000" />
     </task>
     <task id="LOCAL-00001" summary="中央民族大学少数民族资源数据可视化综合服务平台——908实验室">
       <created>1538059369573</created>
@@ -352,11 +359,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538150391953</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="中央民族大学少数民族资源数据可视化综合服务平台——908实验室">
+      <created>1538150611545</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538150611545</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14245000" />
+    <option name="totallyTimeSpent" value="14398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="21" y="26" width="1436" height="836" extended-state="0" />
@@ -499,8 +513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="75" column="43" lean-forward="true" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+        <state relative-caret-position="162">
+          <caret line="6" column="76" lean-forward="true" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
           <folding>
             <element signature="e#1451#1462#0" expanded="true" />
             <element signature="e#1501#1518#0" expanded="true" />
