@@ -11,8 +11,8 @@
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
     <!-- 自动扫描 -->
     <context:component-scan base-package="muc"></context:component-scan>
-    <context:component-scan base-package="mucvillage"></context:component-scan>
-    <context:component-scan base-package="mucmusic"></context:component-scan>
+    <context:component-scan base-package="muc_village"></context:component-scan>
+    <context:component-scan base-package="muc_music"></context:component-scan>
 
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
@@ -88,8 +88,8 @@
         <property name="mapperLocations" >
             <array>
                 <value>classpath:muc/dao/*.xml</value>
-                <value>classpath:mucvillage/dao/*.xml</value>
-                <value>classpath:mucmusic/dao/*.xml</value>
+                <value>classpath:muc_village/dao/*.xml</value>
+                <value>classpath:muc_music/dao/*.xml</value>
             </array>
         </property>
     </bean>
