@@ -1,4 +1,4 @@
-package mysql;
+package com.mysql;
 
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;

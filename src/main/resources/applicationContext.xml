@@ -11,7 +11,7 @@
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
     <!-- 自动扫描 -->
  <!--   <context:component-scan base-package="muc"></context:component-scan>-->
-    <context:component-scan base-package="muc_village"/>
+    <context:component-scan base-package="com.muc_village"/>
   <!--  <context:component-scan base-package="muc_music"></context:component-scan>-->
 
     <!-- 引入配置文件 -->
@@ -71,7 +71,7 @@
         &lt;!&ndash; 获取连接最大等待时间 &ndash;&gt;
         <property name="maxWait" value="${maxWait}"></property>
     </bean>-->
-    <bean id="dataSource" class="mysql.DbcontextHolder"><!-- 这里写选择数据源的类地址 下面跟着给出-->
+    <bean id="dataSource" class="com.mysql.DbcontextHolder"><!-- 这里写选择数据源的类地址 下面跟着给出-->
         <property name="defaultTargetDataSource" ref="dataSourcemuc_village"/><!-- 设置默认为此dataSourceOld数据源-->
         <property name="targetDataSources">
             <map>
@@ -88,7 +88,7 @@
         <property name="mapperLocations" >
             <array>
                <!-- <value>classpath:muc/dao/*.xml</value>-->
-                <value>classpath:muc_village/dao/sw_VillageMapper.xml</value>
+                <value>classpath*:mapper/*.xml</value>
                <!-- <value>classpath:muc_music/dao/*.xml</value>-->
             </array>
         </property>
@@ -102,7 +102,7 @@
 
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="muc_village.dao.*"/>
+        <property name="basePackage" value="com.muc_village.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 

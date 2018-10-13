@@ -19,9 +19,9 @@
     <mvc:default-servlet-handler/>
 
     <!-- 3、自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
-    <context:component-scan base-package="muc.controller" />
-    <context:component-scan base-package="muc_village.controller" />
-    <context:component-scan base-package="muc_music.controller " />
+    <context:component-scan base-package="com.muc.controller" />
+    <context:component-scan base-package="com.muc_village.controller" />
+    <context:component-scan base-package="com.muc_music.controller " />
 
     <!-- 1、启用注解驱动-->
     <mvc:annotation-driven />
