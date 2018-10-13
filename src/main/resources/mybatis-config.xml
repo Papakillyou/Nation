@@ -11,8 +11,8 @@
     <!-- 配置类型别名 -->
     <typeAliases>
         <package name="muc.pojo.UserInfo"/>
-        <package name="mucvillage.pojo.VillageInfo"/>
-        <package name="mucmusic.pojo.MusicInfo"/>
+        <package name="muc_village.pojo.sw_VillageInfo"/>
+        <package name="muc_music.pojo.MusicInfo"/>
     </typeAliases>
 
     <!-- 配置分页查询 -->

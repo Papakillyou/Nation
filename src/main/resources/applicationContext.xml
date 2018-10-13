@@ -2,17 +2,17 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                         http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
                         http://www.springframework.org/schema/context
                         http://www.springframework.org/schema/context/spring-context-3.1.xsd
                         http://www.springframework.org/schema/mvc
-                        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
     <!-- 自动扫描 -->
-    <context:component-scan base-package="muc"></context:component-scan>
-    <context:component-scan base-package="muc_village"></context:component-scan>
-    <context:component-scan base-package="muc_music"></context:component-scan>
+ <!--   <context:component-scan base-package="muc"></context:component-scan>-->
+    <context:component-scan base-package="muc_village"/>
+  <!--  <context:component-scan base-package="muc_music"></context:component-scan>-->
 
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
@@ -20,23 +20,23 @@
         <property name="location" value="classpath:jdbc.properties" />
     </bean>
 
-    <bean id="dataSourcemuc" class="org.apache.commons.dbcp.BasicDataSource"
+   <!-- <bean id="dataSourcemuc" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="${driver}" />
         <property name="url" value="${mucmysql.url}" />
         <property name="username" value="${username}" />
         <property name="password" value="${password}" />
-        <!-- 初始化连接大小 -->
+        &lt;!&ndash; 初始化连接大小 &ndash;&gt;
         <property name="initialSize" value="${initialSize}"></property>
-        <!-- 连接池最大数量 -->
+        &lt;!&ndash; 连接池最大数量 &ndash;&gt;
         <property name="maxActive" value="${maxActive}"></property>
-        <!-- 连接池最大空闲 -->
+        &lt;!&ndash; 连接池最大空闲 &ndash;&gt;
         <property name="maxIdle" value="${maxIdle}"></property>
-        <!-- 连接池最小空闲 -->
+        &lt;!&ndash; 连接池最小空闲 &ndash;&gt;
         <property name="minIdle" value="${minIdle}"></property>
-        <!-- 获取连接最大等待时间 -->
+        &lt;!&ndash; 获取连接最大等待时间 &ndash;&gt;
         <property name="maxWait" value="${maxWait}"></property>
-    </bean>
+    </bean>-->
     <bean id="dataSourcemuc_village" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="${driver}" />
@@ -54,30 +54,30 @@
         <!-- 获取连接最大等待时间 -->
         <property name="maxWait" value="${maxWait}"></property>
     </bean>
-    <bean id="dataSourcemuc_music" class="org.apache.commons.dbcp.BasicDataSource"
+   <!-- <bean id="dataSourcemuc_music" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="${driver}" />
         <property name="url" value="${muc_musicmysql.url}" />
         <property name="username" value="${username}" />
         <property name="password" value="${password}" />
-        <!-- 初始化连接大小 -->
+        &lt;!&ndash; 初始化连接大小 &ndash;&gt;
         <property name="initialSize" value="${initialSize}"></property>
-        <!-- 连接池最大数量 -->
+        &lt;!&ndash; 连接池最大数量 &ndash;&gt;
         <property name="maxActive" value="${maxActive}"></property>
-        <!-- 连接池最大空闲 -->
+        &lt;!&ndash; 连接池最大空闲 &ndash;&gt;
         <property name="maxIdle" value="${maxIdle}"></property>
-        <!-- 连接池最小空闲 -->
+        &lt;!&ndash; 连接池最小空闲 &ndash;&gt;
         <property name="minIdle" value="${minIdle}"></property>
-        <!-- 获取连接最大等待时间 -->
+        &lt;!&ndash; 获取连接最大等待时间 &ndash;&gt;
         <property name="maxWait" value="${maxWait}"></property>
-    </bean>
+    </bean>-->
     <bean id="dataSource" class="mysql.DbcontextHolder"><!-- 这里写选择数据源的类地址 下面跟着给出-->
         <property name="defaultTargetDataSource" ref="dataSourcemuc_village"/><!-- 设置默认为此dataSourceOld数据源-->
         <property name="targetDataSources">
             <map>
-                <entry key="dataSourcemuc" value-ref="dataSourcemuc"/>
+                <!--<entry key="dataSourcemuc" value-ref="dataSourcemuc"/>-->
                 <entry key="dataSourcemuc_village" value-ref="dataSourcemuc_village"/>
-                <entry key="dataSourcemuc_music" value-ref="dataSourcemuc_music"/>
+         <!--       <entry key="dataSourcemuc_music" value-ref="dataSourcemuc_music"/>-->
             </map>
         </property>
     </bean>
@@ -87,16 +87,22 @@
         <!-- 自动扫描mapping.xml文件 -->
         <property name="mapperLocations" >
             <array>
-                <value>classpath:muc/dao/*.xml</value>
-                <value>classpath:muc_village/dao/*.xml</value>
-                <value>classpath:muc_music/dao/*.xml</value>
+               <!-- <value>classpath:muc/dao/*.xml</value>-->
+                <value>classpath:muc_village/dao/sw_VillageMapper.xml</value>
+               <!-- <value>classpath:muc_music/dao/*.xml</value>-->
             </array>
         </property>
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
+   <!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="muc.dao.*"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+    </bean>-->
+
+
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.spiderweb.dao.mapper.*" />
+        <property name="basePackage" value="muc_village.dao.*"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 
