@@ -7,14 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dfc41b3-b257-4d23-8ece-36ed7e79128a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Nation_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Nation_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Nation.iml" afterPath="$PROJECT_DIR$/Nation.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql/DbcontextHolder.java" afterPath="$PROJECT_DIR$/src/main/java/com/mysql/DbcontextHolder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -749,7 +742,7 @@
       <workItem from="1539136672327" duration="9794000" />
       <workItem from="1539177710304" duration="9122000" />
       <workItem from="1539353659399" duration="3370000" />
-      <workItem from="1539407341628" duration="16188000" />
+      <workItem from="1539407341628" duration="16252000" />
     </task>
     <task id="LOCAL-00001" summary="中央民族大学少数民族资源数据可视化综合服务平台——908实验室">
       <created>1538059369573</created>
@@ -814,7 +807,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539419088530</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=".">
+      <created>1539433353016</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1539433353016</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -850,7 +850,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95265000" />
+    <option name="totallyTimeSpent" value="95329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muc_village.dao.sw_architectureMapper">
+    <select id="getAllArchitecture"  resultType="com.muc_village.pojo.sw_architectureInfo">
+        SELECT * FROM southwest_architecture
+    </select>
+
+    <insert id="addarchitecture" parameterType="com.muc_village.pojo.sw_architectureInfo" >
+        insert into southwest_architecture
+        values(#{SouthwestVillageID},#{BuildingForm},#{Characteristics},#{Combination},#{MasterialStructure},#{ArtisticEvaluation})
+    </insert>
+
+    <delete id="deletearchitecture" parameterType="int" >
+        delete from southwest_architecture
+        where SouthwestVillageID=#{SouthwestVillageID}
+    </delete>
+
+    <update id="updatearchitecture" parameterType="com.muc_village.pojo.sw_architectureInfo">
+        update southwest_architecture
+        set BuildingForm=#{BuildingForm},
+        Characteristics=#{Characteristics},
+        Combination=#{Combination},
+        MasterialStructure=#{MasterialStructure},
+        ArtisticEvaluation=#{ArtisticEvaluation}
+        where SouthwestVillageID=#{SouthwestVillageID}
+
+    </update>
+
+    <select id="getContent" parameterType="int" resultType="com.muc_village.pojo.sw_architectureInfo">
+        select * from southwest_architecture
+        where SouthwestVillageID=#{SouthwestVillageID}
+    </select>
+
+
+
+</mapper>
