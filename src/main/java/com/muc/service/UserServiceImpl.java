@@ -15,15 +15,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void regist(UserInfo user) {
-        // TODO Auto-generated method stub
-
-        usermapper.adduser(user);
+        usermapper.addUser(user);
     }
 
     @Override
     public void login(String name, String password) {
-// TODO Auto-generated method stub
-
         usermapper.findUserByNameAndPwd(name,password);
     }
 }

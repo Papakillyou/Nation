@@ -4,7 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.muc_village.pojo.sw_VillageInfo;
 import com.muc_village.service.sw_VillageService;
-import com.mysql.DbcontextHolder;
+import com.mysql.operation.DbcontextHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,7 +19,6 @@ import java.util.ArrayList;
 
 
 @Controller
-@RequestMapping("/user")
 public class UserController {
     //注入Service
     @Autowired
@@ -32,9 +31,9 @@ public class UserController {
         this.sw_villageService = sw_villageService;
     }
     //进入网站首页
-    @RequestMapping("/com/muc")//首页，只实现“数据更新”模块
+    @RequestMapping("/muc")//首页，只实现“数据更新”模块
     public ModelAndView getModelAndView(@RequestParam(value="pn",defaultValue="1")Integer pn) {
-        DbcontextHolder.setDbType("com/muc_village");
+        DbcontextHolder.setDbType("muc_village");
         ModelAndView mv = null;
         PageHelper.startPage(pn, 5);
         mv = new ModelAndView("sw_village");
@@ -50,9 +49,9 @@ public class UserController {
     //用户注册
     @RequestMapping("regist")
     public String regist(UserInfo user, Model model) {
-        DbcontextHolder.setDbType("com/muc");
-        System.out.println("用户注册：" + user.getUsername() + user.getPassword());
-        user.setUserid(1);
+        DbcontextHolder.setDbType("muc");
+        System.out.println("用户注册：" + user.getUserName() + user.getPassWord());
+        user.setUserID(1);
         userService.regist(user);
         model.addAttribute("msg", "注册成功");
         //注册成功后跳转success.jsp页面
@@ -72,7 +71,14 @@ public class UserController {
     @RequestMapping("/village")
     public String returnVillage()
     {
-        DbcontextHolder.setDbType("com/muc_village");
+        DbcontextHolder.setDbType("muc_village");
+        return "village";
+    }
+    //进入音樂首页
+    @RequestMapping("/music")
+    public String returnMusic()
+    {
+        DbcontextHolder.setDbType("muc_village");
         return "village";
     }
 

@@ -1,16 +1,16 @@
 package com.muc.pojo;
 
 public class UserInfo {
-    private Integer userid;
-    private String username;
-    private String password;
+    private Integer UserID;
+    private String UserName;
+    private String PassWord;
 
-    public UserInfo(Integer userid,String username,String password)
+    public UserInfo(Integer UserID,String UserName,String PassWord)
     {
         super();
-        this.userid=userid;
-        this.username=username;
-        this.password=password;
+        this.UserID=UserID;
+        this.UserName=UserName;
+        this.PassWord=PassWord;
     }
 
     public UserInfo()
@@ -18,27 +18,27 @@ public class UserInfo {
         super();
     }
 
-    public Integer getUserid() {
-        return userid;
+    public Integer getUserID() {
+        return UserID;
     }
 
-    public void setUserid(Integer userid) {
-        this.userid = userid;
+    public void setUserID(Integer UserID) {
+        this.UserID = UserID;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return UserName;
     }
 
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
+    public void setUserName(String UserName) {
+        this.UserName = UserName == null ? null : UserName.trim();
     }
 
-    public String getPassword() {
-        return password;
+    public String getPassWord() {
+        return PassWord;
     }
 
-    public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
+    public void setPassWord(String PassWord) {
+        this.PassWord = PassWord == null ? null : PassWord.trim();
     }
 }

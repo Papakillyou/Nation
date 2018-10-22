@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository("userMapper")
 public interface UserMapper {
-    public void adduser(UserInfo user);//添加用户
+    public void addUser(UserInfo user);//添加用户
 
     //根据用户名和密码查询用户
 

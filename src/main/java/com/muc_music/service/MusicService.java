@@ -1,12 +1,10 @@
-package com.muc_music.dao;
+package com.muc_music.service;
 
 import com.muc_music.pojo.MusicInfo;
-import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 
-@Repository("musicMapper")
-public interface MusicMapper {
+public interface MusicService {
     ArrayList<MusicInfo> getAllMusic();   //获取所有音乐
     MusicInfo getContent(int MusicID);     //根据id获得音乐
 }

@@ -3,10 +3,8 @@ package com.muc_village.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.muc_village.pojo.sw_VillageInfo;
-import com.muc_village.pojo.sw_architectureInfo;
-import com.muc_village.service.sw_VillageService;
-import com.muc_village.service.sw_architectureService;
+import com.muc_village.pojo.*;
+import com.muc_village.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +20,13 @@ public class sw_VillageController {
     private sw_VillageService sw_villageService = null;
     @Autowired
     private sw_architectureService sw_architectureService = null;
+    @Autowired
+    private sw_cultureService sw_cultureService = null;
+    @Autowired
+    private sw_ecologyService  sw_ecologyService= null;
+    @Autowired
+    private sw_estheticsService sw_estheticsService= null;
+
 
 
     @Resource(name = "sw_VillageService")
@@ -95,11 +100,11 @@ public class sw_VillageController {
     }
 
     //进入村寨详情页----建筑特色
-    @RequestMapping("/read_architecture")
+    @RequestMapping("/read_sw_architecture")
     public ModelAndView readData_architecture(int id) {
         ModelAndView mv = null;
         try {
-            mv = new ModelAndView("sw_architecture");
+            mv = new ModelAndView("read_sw_architecture");
 
             sw_architectureInfo architecture = sw_architectureService.getContent(id);
 
@@ -109,10 +114,10 @@ public class sw_VillageController {
         }
         return mv;
     }
-}
+
 
     //进入村寨详情页----美学价值
-   /* @RequestMapping("/read_esthetics")
+    @RequestMapping("/read_esthetics")
     public ModelAndView readData_esthetics(int id)
     {
         ModelAndView mv=null;
@@ -129,16 +134,16 @@ public class sw_VillageController {
     }
 
     //进入村寨详情页----生态和谐
-    @RequestMapping("/read_architecture")
-    public ModelAndView readData_architecture(int id)
+    @RequestMapping("/read_ecology")
+    public ModelAndView readData_ecology(int id)
     {
         ModelAndView mv=null;
         try{
-            mv=new ModelAndView("sw_architecture");
+            mv=new ModelAndView("sw_ecology");
 
-            sw_architectureInfo architecture=sw_architectureService.getContent(id);
+            sw_ecologyInfo ecology=sw_ecologyService.getContent(id);
 
-            mv.addObject("data",architecture);
+            mv.addObject("data",ecology);
         }catch (Exception e) {
             e.printStackTrace();
         }
@@ -148,19 +153,19 @@ public class sw_VillageController {
 
 
     //进入村寨详情页----文化特色
-    @RequestMapping("/read_architecture")
-    public ModelAndView readData_architecture(int id)
+    @RequestMapping("/read_culture")
+    public ModelAndView readData_culture(int id)
     {
         ModelAndView mv=null;
         try{
-            mv=new ModelAndView("sw_architecture");
+            mv=new ModelAndView("sw_culture");
 
-            sw_architectureInfo architecture=sw_architectureService.getContent(id);
+            sw_cultureInfo culture=sw_cultureService.getContent(id);
 
-            mv.addObject("data",architecture);
+            mv.addObject("data",culture);
         }catch (Exception e) {
             e.printStackTrace();
         }
         return mv;
     }
-}*/
+}

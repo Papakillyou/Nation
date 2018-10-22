@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muc_music.dao.MusicMapper">
+    <select id="getAllMusic"  resultType="com.muc_music.pojo.MusicInfo">
+        SELECT * FROM music
+    </select>
+
+    <select id="getContent" parameterType="int" resultType="com.muc_music.pojo.MusicInfo">
+        select * from music
+        where MusicID=#{MusicID}
+    </select>
+</mapper>

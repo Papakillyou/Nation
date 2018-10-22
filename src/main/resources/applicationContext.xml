@@ -10,7 +10,7 @@
                         http://www.springframework.org/schema/mvc
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
     <!-- 自动扫描 -->
- <!--   <context:component-scan base-package="muc"></context:component-scan>-->
+    <context:component-scan base-package="com.muc"/>
     <context:component-scan base-package="com.muc_village"/>
   <!--  <context:component-scan base-package="muc_music"></context:component-scan>-->
 
@@ -20,23 +20,23 @@
         <property name="location" value="classpath:jdbc.properties" />
     </bean>
 
-   <!-- <bean id="dataSourcemuc" class="org.apache.commons.dbcp.BasicDataSource"
+    <bean id="dataSourcemuc" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="${driver}" />
         <property name="url" value="${mucmysql.url}" />
         <property name="username" value="${username}" />
         <property name="password" value="${password}" />
-        &lt;!&ndash; 初始化连接大小 &ndash;&gt;
+        <!-- 初始化连接大小 -->
         <property name="initialSize" value="${initialSize}"></property>
-        &lt;!&ndash; 连接池最大数量 &ndash;&gt;
+        <!-- 连接池最大数量 -->
         <property name="maxActive" value="${maxActive}"></property>
-        &lt;!&ndash; 连接池最大空闲 &ndash;&gt;
+        <!-- 连接池最大空闲 -->
         <property name="maxIdle" value="${maxIdle}"></property>
-        &lt;!&ndash; 连接池最小空闲 &ndash;&gt;
+        <!-- 连接池最小空闲 -->
         <property name="minIdle" value="${minIdle}"></property>
-        &lt;!&ndash; 获取连接最大等待时间 &ndash;&gt;
+        <!-- 获取连接最大等待时间 -->
         <property name="maxWait" value="${maxWait}"></property>
-    </bean>-->
+    </bean>
     <bean id="dataSourcemuc_village" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="${driver}" />
@@ -71,15 +71,16 @@
         &lt;!&ndash; 获取连接最大等待时间 &ndash;&gt;
         <property name="maxWait" value="${maxWait}"></property>
     </bean>-->
-    <bean id="dataSource" class="com.mysql.DbcontextHolder"><!-- 这里写选择数据源的类地址 下面跟着给出-->
-        <property name="defaultTargetDataSource" ref="dataSourcemuc_village"/><!-- 设置默认为此dataSourceOld数据源-->
+    <bean id="dataSource" class="com.mysql.basics.DynamicDataSource"><!-- 这里写选择数据源的类地址 下面跟着给出-->
         <property name="targetDataSources">
-            <map>
-                <!--<entry key="dataSourcemuc" value-ref="dataSourcemuc"/>-->
+            <map key-type="java.lang.String">
+                <entry key="dataSourcemuc" value-ref="dataSourcemuc"/>
                 <entry key="dataSourcemuc_village" value-ref="dataSourcemuc_village"/>
-         <!--       <entry key="dataSourcemuc_music" value-ref="dataSourcemuc_music"/>-->
+                <!--<entry key="dataSourcemuc_music" value-ref="dataSourcemuc_music"/>-->
             </map>
         </property>
+        <!-- 设置默认为此dataSourcemuc_village数据源-->
+        <property name="defaultTargetDataSource" ref="dataSourcemuc_village"/>
     </bean>
     <!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -87,18 +88,16 @@
         <!-- 自动扫描mapping.xml文件 -->
         <property name="mapperLocations" >
             <array>
-               <!-- <value>classpath:muc/dao/*.xml</value>-->
                 <value>classpath*:mapper/*.xml</value>
-               <!-- <value>classpath:muc_music/dao/*.xml</value>-->
             </array>
         </property>
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
-   <!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="muc.dao.*"/>
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.muc.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
-    </bean>-->
+    </bean>
 
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">

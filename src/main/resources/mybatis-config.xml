@@ -10,7 +10,7 @@
 
     <!-- 配置类型别名 -->
     <typeAliases>
-        <!--<package name="com.muc.pojo.UserInfo"/>-->
+        <package name="com.muc.pojo.UserInfo"/>
         <package name="com.muc_village.pojo.sw_VillageInfo"/>
         <package name="com.muc_village.pojo.sw_architectureInfo"/>
         <!--<package name="MusicInfo"/>-->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="dao.sw_estheticsMapper" >
+  <resultMap id="BaseResultMap" type="pojo.sw_esthetics" >
+    <id column="SouthwestVillageID" property="southwestvillageid" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="pojo.sw_esthetics" extends="BaseResultMap" >
+    <result column="ArchitecturalArt" property="architecturalart" jdbcType="LONGVARCHAR" />
+    <result column="InternalAndExternalAesthetics" property="internalandexternalaesthetics" jdbcType="LONGVARCHAR" />
+    <result column="LifeBeauty" property="lifebeauty" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    SouthwestVillageID
+  </sql>
+  <sql id="Blob_Column_List" >
+    ArchitecturalArt, InternalAndExternalAesthetics, LifeBeauty
+  </sql>
+  <select id="getAllEsthetics"  resultType="com.muc_village.pojo.sw_estheticsInfo">
+    SELECT * FROM southwest_esthetics
+  </select>
+
+  <select id="getContent" parameterType="int" resultType="com.muc_village.pojo.sw_estheticsInfo">
+    select * from southwest_esthetics
+    where SouthwestVillageID=#{SouthwestVillageID}
+  </select>
+</mapper>
