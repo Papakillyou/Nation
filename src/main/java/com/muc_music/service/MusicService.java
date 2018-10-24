@@ -6,5 +6,5 @@ import java.util.ArrayList;
 
 public interface MusicService {
     ArrayList<MusicInfo> getAllMusic();   //获取所有音乐
-    MusicInfo getContent(int MusicID);     //根据id获得音乐
+    MusicInfo getContentByID(int MusicID);     //根据id获得音乐
 }

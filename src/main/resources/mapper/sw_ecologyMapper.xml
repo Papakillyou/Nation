@@ -22,7 +22,7 @@
     SELECT * FROM southwest_ecology
   </select>
 
-  <select id="getContent" parameterType="int" resultType="com.muc_village.pojo.sw_ecologyInfo">
+  <select id="getContent" parameterType="java.lang.Integer" resultType="com.muc_village.pojo.sw_ecologyInfo">
     select * from southwest_ecology
     where SouthwestVillageID=#{SouthwestVillageID}
   </select>

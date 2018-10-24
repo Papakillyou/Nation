@@ -16,7 +16,7 @@ public class MusicServiceImpl implements MusicService {
         return musicMapper.getAllMusic();
     }
 
-    public MusicInfo getContent(int MusicID) {
-        return musicMapper.getContent(MusicID);
+    public MusicInfo getContentByID(int MusicID) {
+        return musicMapper.getContentByID(MusicID);
     }
 }

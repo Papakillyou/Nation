@@ -21,7 +21,7 @@
     SELECT * FROM southwest_culture
   </select>
 
-  <select id="getContent" parameterType="int" resultType="com.muc_village.pojo.sw_cultureInfo">
+  <select id="getContent" parameterType="java.lang.Integer" resultType="com.muc_village.pojo.sw_cultureInfo">
     select * from southwest_culture
     where SouthwestVillageID=#{SouthwestVillageID}
   </select>

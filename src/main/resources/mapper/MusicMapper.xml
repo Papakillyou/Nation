@@ -1,13 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.muc_music.dao.MusicMapper">
-    <select id="getAllMusic"  resultType="com.muc_music.pojo.MusicInfo">
-        SELECT * FROM music
-    </select>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="dao.musicMapper" >
+  <resultMap id="BaseResultMap" type="pojo.music" >
+    <id column="MusicID" property="musicid" jdbcType="INTEGER" />
+    <result column="Title" property="title" jdbcType="VARCHAR" />
+    <result column="Singer" property="singer" jdbcType="VARCHAR" />
+    <result column="Summary" property="summary" jdbcType="VARCHAR" />
+    <result column="Length" property="length" jdbcType="VARCHAR" />
+    <result column="Path" property="path" jdbcType="VARCHAR" />
+    <result column="Nation" property="nation" jdbcType="VARCHAR" />
+    <result column="Area" property="area" jdbcType="VARCHAR" />
+    <result column="Style" property="style" jdbcType="VARCHAR" />
+    <result column="Instruments" property="instruments" jdbcType="VARCHAR" />
+    <result column="Update" property="update" jdbcType="TIMESTAMP" />
+    <result column="Click" property="click" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="pojo.music" extends="BaseResultMap" >
+    <result column="Picture" property="picture" jdbcType="BINARY" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    MusicID, Title, Singer, Summary, Length, Path, Nation, Area, Style, Instruments, 
+    Update, Click
+  </sql>
+  <sql id="Blob_Column_List" >
+    Picture
+  </sql>
+  <select id="getAllMusic"  resultType="com.muc_music.pojo.MusicInfo">
+    SELECT * FROM music
+  </select>
 
-    <select id="getContent" parameterType="int" resultType="com.muc_music.pojo.MusicInfo">
-        select * from music
-        where MusicID=#{MusicID}
-    </select>
+  <select id="getContentByID" parameterType="java.lang.Integer" resultType="com.muc_music.pojo.MusicInfo">
+    select * from music
+    where MusicID=#{MusicID}
+  </select>
+  <select id="getContentByNation" parameterType="java.lang.String" resultType="com.muc_music.pojo.MusicInfo">
+    select * from music
+    where Nation=#{Nation}
+  </select>
+  <select id="getContentByArea" parameterType="java.lang.String" resultType="com.muc_music.pojo.MusicInfo">
+    select * from music
+    where Area=#{Area}
+  </select>
+  <select id="getContentStyle" parameterType="ava.lang.String" resultType="com.muc_music.pojo.MusicInfo">
+    select * from music
+    where Style=#{Style}
+  </select>
+  <select id="getContentByInstrumentsa" parameterType="ava.lang.String" resultType="com.muc_music.pojo.MusicInfo">
+    select * from music
+    where Instrumentsa=#{Instrumentsa}
+  </select>
+  <select id="getContentBySinger" parameterType="ava.lang.String" resultType="com.muc_music.pojo.MusicInfo">
+    select * from music
+    where Singer=#{Singer}
+  </select>
 </mapper>

@@ -3,156 +3,133 @@ package com.muc_music.pojo;
 import java.util.Date;
 
 public class MusicInfo {
-    private int MusicID;
-    private String Title;
-    private String Singer;
-    private String Summary;
-    private String Picture;
-    private String Length;
-    private String Path;
-    private String Nation;
-    private String Area;
-    private String Style;
-    private String Instruments;
-    private Date Update;
-    private int Click;
+    private Integer musicid;
 
-    public int getMusicID() {
-        return MusicID;
+    private String title;
+
+    private String singer;
+
+    private String summary;
+
+    private String length;
+
+    private String path;
+
+    private String nation;
+
+    private String area;
+
+    private String style;
+
+    private String instruments;
+
+    private Date update;
+
+    private Integer click;
+
+    private byte[] picture;
+
+    public Integer getMusicid() {
+        return musicid;
     }
 
-    public void setMusicID(int musicID) {
-        MusicID = musicID;
+    public void setMusicid(Integer musicid) {
+        this.musicid = musicid;
     }
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title == null ? null : title.trim();
     }
 
     public String getSinger() {
-        return Singer;
+        return singer;
     }
 
     public void setSinger(String singer) {
-        Singer = singer;
+        this.singer = singer == null ? null : singer.trim();
     }
 
     public String getSummary() {
-        return Summary;
+        return summary;
     }
 
     public void setSummary(String summary) {
-        Summary = summary;
-    }
-
-    public String getPicture() {
-        return Picture;
-    }
-
-    public void setPicture(String picture) {
-        Picture = picture;
+        this.summary = summary == null ? null : summary.trim();
     }
 
     public String getLength() {
-        return Length;
+        return length;
     }
 
     public void setLength(String length) {
-        Length = length;
+        this.length = length == null ? null : length.trim();
     }
 
     public String getPath() {
-        return Path;
+        return path;
     }
 
     public void setPath(String path) {
-        Path = path;
+        this.path = path == null ? null : path.trim();
     }
 
     public String getNation() {
-        return Nation;
+        return nation;
     }
 
     public void setNation(String nation) {
-        Nation = nation;
+        this.nation = nation == null ? null : nation.trim();
     }
 
     public String getArea() {
-        return Area;
+        return area;
     }
 
     public void setArea(String area) {
-        Area = area;
+        this.area = area == null ? null : area.trim();
     }
 
     public String getStyle() {
-        return Style;
+        return style;
     }
 
     public void setStyle(String style) {
-        Style = style;
+        this.style = style == null ? null : style.trim();
     }
 
     public String getInstruments() {
-        return Instruments;
+        return instruments;
     }
 
     public void setInstruments(String instruments) {
-        Instruments = instruments;
+        this.instruments = instruments == null ? null : instruments.trim();
     }
 
     public Date getUpdate() {
-        return Update;
+        return update;
     }
 
     public void setUpdate(Date update) {
-        Update = update;
+        this.update = update;
     }
 
-    public int getClick() {
-        return Click;
+    public Integer getClick() {
+        return click;
     }
 
-    public void setClick(int click) {
-        Click = click;
+    public void setClick(Integer click) {
+        this.click = click;
     }
 
-    public MusicInfo(int MusicID,
-                     String Title,
-                     String Singer,
-                     String Summary,
-                     String Picture,
-                     String Length,
-                     String Path,
-                     String Nation,
-                     String Area,
-                     String Style,
-                     String Instruments,
-                     Date Update,
-                     int Click)
-    {
-        super();
-        this.MusicID=MusicID;
-        this.Title=Title;
-        this.Singer=Singer;
-        this.Summary=Summary;
-        this.Picture=Picture;
-        this.Length=Length;
-        this.Path=Path;
-        this.Nation=Nation;
-        this.Area=Area;
-        this.Style=Style;
-        this.Instruments=Instruments;
-        this.Update=Update;
-        this.Click=Click;
+    public byte[] getPicture() {
+        return picture;
     }
 
-    public MusicInfo() {
-        super();
+    public void setPicture(byte[] picture) {
+        this.picture = picture;
     }
-
 }
