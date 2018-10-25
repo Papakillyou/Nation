@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
-@Service("musicService")
+@Service("MusicService")
 public class MusicServiceImpl implements MusicService {
     @Autowired
     private MusicMapper musicMapper;
