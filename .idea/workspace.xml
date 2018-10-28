@@ -8,14 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7dfc41b3-b257-4d23-8ece-36ed7e79128a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/muc_music/dao/MusicMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/muc_music/dao/MusicMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicService.java" afterPath="$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_ecologyServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_ecologyServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_estheticsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_estheticsServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MusicMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MusicMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/sw_cultureMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/sw_cultureMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/sw_ecologyMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/sw_ecologyMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/sw_estheticsMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/sw_estheticsMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,87 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="108" column="61" lean-forward="false" selection-start-line="108" selection-start-column="61" selection-end-line="108" selection-end-column="61" />
-              <folding>
-                <marker date="1540486110745" expanded="true" signature="1566:1575" ph="com.mysql.jdbc.Driver" />
-                <marker date="1540486110745" expanded="false" signature="1677:1688" ph="root" />
-                <marker date="1540486110745" expanded="false" signature="1734:1745" ph="data" />
-                <marker date="1540486110745" expanded="false" signature="1819:1833" ph="0" />
-                <marker date="1540486110745" expanded="false" signature="1914:1926" ph="20" />
-                <marker date="1540486110745" expanded="false" signature="2005:2015" ph="20" />
-                <marker date="1540486110745" expanded="false" signature="2094:2104" ph="1" />
-                <marker date="1540486110745" expanded="false" signature="2186:2196" ph="60000 " />
-                <marker date="1540486110745" expanded="false" signature="3218:3227" ph="com.mysql.jdbc.Driver" />
-                <marker date="1540486110745" expanded="false" signature="3268:3289" ph="jdbc:mysql://localhost:3306/muc_music?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8" />
-                <marker date="1540486110745" expanded="false" signature="3335:3346" ph="root" />
-                <marker date="1540486110745" expanded="false" signature="3392:3403" ph="data" />
-                <marker date="1540486110745" expanded="false" signature="3477:3491" ph="0" />
-                <marker date="1540486110745" expanded="false" signature="3572:3584" ph="20" />
-                <marker date="1540486110745" expanded="false" signature="3663:3673" ph="20" />
-                <marker date="1540486110745" expanded="false" signature="3752:3762" ph="1" />
-                <marker date="1540486110745" expanded="false" signature="3844:3854" ph="60000 " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MusicMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/MusicMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-              <folding>
-                <marker date="1540486159655" expanded="true" signature="277:296" ph="SELECT * FRO... music" />
-                <marker date="1540486159655" expanded="true" signature="421:469" ph="select * fro... music" />
-                <marker date="1540486159655" expanded="true" signature="596:642" ph="select * fro... music" />
-                <marker date="1540486159655" expanded="true" signature="767:809" ph="select * fro... music" />
-                <marker date="1540486159655" expanded="true" signature="933:977" ph="select * fro... music" />
-                <marker date="1540486159655" expanded="true" signature="1110:1168" ph="select * fro... music" />
-                <marker date="1540486159655" expanded="true" signature="1295:1341" ph="select * fro... music" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sw_ecologyServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_ecologyServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sw_estheticsServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_estheticsServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sw_ecologyService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_ecologyService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="8" column="75" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sw_cultureServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_cultureServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -118,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sw_architectureMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <marker date="1540395817943" expanded="true" signature="318:354" ph="SELECT * FRO... southwest_architecture" />
                 <marker date="1540395817943" expanded="true" signature="470:636" ph="insert into southwest_architecture... " />
@@ -130,11 +49,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MusicServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MusicServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="177">
+              <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding>
+                <element signature="method#getContentByInstrumentsa#0;class#MusicServiceImpl#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusicService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sw_VillageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/controller/sw_VillageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="124" column="48" lean-forward="false" selection-start-line="124" selection-start-column="48" selection-end-line="124" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusicMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_music/dao/MusicMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusicController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_music/controller/MusicController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="134" column="32" lean-forward="true" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#4372#4373#0" expanded="true" />
+                <element signature="e#4410#4411#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sw_architectureService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_architectureService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -144,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sw_cultureMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding>
                 <marker date="1540485167425" expanded="true" signature="293:324" ph="SELECT * FRO... southwest_culture" />
                 <marker date="1540485167425" expanded="true" signature="452:534" ph="select * fro... southwest_culture" />
@@ -175,8 +154,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -210,7 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/muc_music/pojo/MusicInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/muc_music/dao/MusicMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/muc_village/service/sw_architectureServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/muc_village/service/sw_VillageServiceImpl.java" />
@@ -248,12 +226,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/muc_village/dao/sw_estheticsMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_estheticsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/muc_village/controller/sw_VillageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/muc_music/dao/MusicMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/muc_music/pojo/MusicInfo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sw_architectureMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sw_VillageMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sw_estheticsMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sw_ecologyMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sw_cultureMapper.xml" />
@@ -261,6 +236,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/MusicMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_ecologyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_estheticsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/muc_music/dao/MusicMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/muc_music/controller/MusicController.java" />
       </list>
     </option>
   </component>
@@ -354,9 +333,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -407,6 +383,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="muc_music" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="muc_music" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -437,6 +423,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="muc_village" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="muc_village" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Nation" type="b2602c69:ProjectViewProjectNode" />
@@ -508,6 +504,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -516,7 +515,7 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../News" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -849,7 +848,8 @@
       <workItem from="1540209147441" duration="4673000" />
       <workItem from="1540382641215" duration="5202000" />
       <workItem from="1540455153047" duration="2108000" />
-      <workItem from="1540482814973" duration="2049000" />
+      <workItem from="1540482814973" duration="2110000" />
+      <workItem from="1540698074887" duration="6803000" />
     </task>
     <task id="LOCAL-00001" summary="中央民族大学少数民族资源数据可视化综合服务平台——908实验室">
       <created>1538059369573</created>
@@ -942,7 +942,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540396903746</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=".">
+      <created>1540486362027</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1540486362027</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -978,7 +985,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129249000" />
+    <option name="totallyTimeSpent" value="136113000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1006,13 +1013,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6298789" sideWeight="0.7178663" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.49749464" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28936744" sideWeight="0.48604152" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.49749464" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.49749464" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15440115" sideWeight="0.76592696" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15440115" sideWeight="0.76592696" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08869814" sideWeight="0.49749464" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25738397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1023,6 +1029,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28936744" sideWeight="0.48604152" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.49749464" order="1" side_tool="false" content_ui="tabs" />
@@ -1082,13 +1089,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mysql/basics/DynamicDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1252,56 +1252,56 @@
         <state relative-caret-position="27">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1039#1040#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1215#1216#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
-            <element signature="e#1441#1442#0" expanded="true" />
-            <element signature="e#1474#1475#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#1672#1673#0" expanded="true" />
-            <element signature="e#1712#1713#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1939#1940#0" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
-            <element signature="e#2011#2012#0" expanded="true" />
-            <element signature="e#2178#2179#0" expanded="true" />
-            <element signature="e#2207#2208#0" expanded="true" />
-            <element signature="e#2249#2250#0" expanded="true" />
-            <element signature="e#2285#2286#0" expanded="true" />
-            <element signature="e#2318#2319#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2389#2390#0" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2457#2458#0" expanded="true" />
-            <element signature="e#2487#2488#0" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2571#2572#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="false" />
+            <element signature="e#505#506#0" expanded="false" />
+            <element signature="e#552#553#0" expanded="false" />
+            <element signature="e#590#591#0" expanded="false" />
+            <element signature="e#622#623#0" expanded="false" />
+            <element signature="e#650#651#0" expanded="false" />
+            <element signature="e#692#693#0" expanded="false" />
+            <element signature="e#756#757#0" expanded="false" />
+            <element signature="e#789#790#0" expanded="false" />
+            <element signature="e#818#819#0" expanded="false" />
+            <element signature="e#862#863#0" expanded="false" />
+            <element signature="e#929#930#0" expanded="false" />
+            <element signature="e#963#964#0" expanded="false" />
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1039#1040#0" expanded="false" />
+            <element signature="e#1109#1110#0" expanded="false" />
+            <element signature="e#1142#1143#0" expanded="false" />
+            <element signature="e#1171#1172#0" expanded="false" />
+            <element signature="e#1215#1216#0" expanded="false" />
+            <element signature="e#1282#1283#0" expanded="false" />
+            <element signature="e#1313#1314#0" expanded="false" />
+            <element signature="e#1340#1341#0" expanded="false" />
+            <element signature="e#1380#1381#0" expanded="false" />
+            <element signature="e#1441#1442#0" expanded="false" />
+            <element signature="e#1474#1475#0" expanded="false" />
+            <element signature="e#1503#1504#0" expanded="false" />
+            <element signature="e#1547#1548#0" expanded="false" />
+            <element signature="e#1614#1615#0" expanded="false" />
+            <element signature="e#1645#1646#0" expanded="false" />
+            <element signature="e#1672#1673#0" expanded="false" />
+            <element signature="e#1712#1713#0" expanded="false" />
+            <element signature="e#1773#1774#0" expanded="false" />
+            <element signature="e#1805#1806#0" expanded="false" />
+            <element signature="e#1833#1834#0" expanded="false" />
+            <element signature="e#1875#1876#0" expanded="false" />
+            <element signature="e#1939#1940#0" expanded="false" />
+            <element signature="e#1977#1978#0" expanded="false" />
+            <element signature="e#2011#2012#0" expanded="false" />
+            <element signature="e#2178#2179#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="false" />
+            <element signature="e#2249#2250#0" expanded="false" />
+            <element signature="e#2285#2286#0" expanded="false" />
+            <element signature="e#2318#2319#0" expanded="false" />
+            <element signature="e#2346#2347#0" expanded="false" />
+            <element signature="e#2389#2390#0" expanded="false" />
+            <element signature="e#2423#2424#0" expanded="false" />
+            <element signature="e#2457#2458#0" expanded="false" />
+            <element signature="e#2487#2488#0" expanded="false" />
+            <element signature="e#2533#2534#0" expanded="false" />
+            <element signature="e#2571#2572#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1313,24 +1313,6 @@
           <folding>
             <marker date="1539438500452" expanded="true" signature="295:383" ph="insert into m_user... " />
             <marker date="1539438500452" expanded="true" signature="568:658" ph="select UserN... m_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_music/dao/MusicMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/controller/sw_VillageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3915">
-          <caret line="156" column="24" lean-forward="false" selection-start-line="156" selection-start-column="24" selection-end-line="156" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1371,7 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1379,23 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_architectureService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1429,34 +1393,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sw_cultureMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <marker date="1540485167425" expanded="true" signature="293:324" ph="SELECT * FRO... southwest_culture" />
-            <marker date="1540485167425" expanded="true" signature="452:534" ph="select * fro... southwest_culture" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sw_VillageMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <marker date="1540395818200" expanded="true" signature="303:326" ph="SELECT * FRO... southwest" />
-            <marker date="1540395818200" expanded="true" signature="431:556" ph="insert into southwest... " />
-            <marker date="1540395818200" expanded="true" signature="633:709" ph="delete from southwest... " />
-            <marker date="1540395818200" expanded="true" signature="817:1069" ph="update southwest... " />
-            <marker date="1540395818200" expanded="true" signature="1206:1284" ph="select * fro... southwest" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
+        <state relative-caret-position="2916">
           <caret line="108" column="61" lean-forward="false" selection-start-line="108" selection-start-column="61" selection-end-line="108" selection-end-column="61" />
           <folding>
             <marker date="1540486110745" expanded="true" signature="1566:1575" ph="com.mysql.jdbc.Driver" />
@@ -1480,23 +1419,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sw_architectureMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1540395817943" expanded="true" signature="318:354" ph="SELECT * FRO... southwest_architecture" />
-            <marker date="1540395817943" expanded="true" signature="470:636" ph="insert into southwest_architecture... " />
-            <marker date="1540395817943" expanded="true" signature="732:821" ph="delete from southwest_architecture... " />
-            <marker date="1540395817943" expanded="true" signature="939:1244" ph="update southwest_architecture... " />
-            <marker date="1540395817943" expanded="true" signature="1386:1477" ph="select * fro... southwest_architecture" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/MusicMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="540">
           <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding>
             <marker date="1540486159655" expanded="true" signature="277:296" ph="SELECT * FRO... music" />
@@ -1507,14 +1432,6 @@
             <marker date="1540486159655" expanded="true" signature="1110:1168" ph="select * fro... music" />
             <marker date="1540486159655" expanded="true" signature="1295:1341" ph="select * fro... music" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_ecologyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="75" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1534,19 +1451,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_ecologyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="75" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_cultureServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sw_architectureMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1540395817943" expanded="true" signature="318:354" ph="SELECT * FRO... southwest_architecture" />
+            <marker date="1540395817943" expanded="true" signature="470:636" ph="insert into southwest_architecture... " />
+            <marker date="1540395817943" expanded="true" signature="732:821" ph="delete from southwest_architecture... " />
+            <marker date="1540395817943" expanded="true" signature="939:1244" ph="update southwest_architecture... " />
+            <marker date="1540395817943" expanded="true" signature="1386:1477" ph="select * fro... southwest_architecture" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sw_cultureMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <marker date="1540485167425" expanded="true" signature="293:324" ph="SELECT * FRO... southwest_culture" />
+            <marker date="1540485167425" expanded="true" signature="452:534" ph="select * fro... southwest_culture" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sw_VillageMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <marker date="1540395818200" expanded="true" signature="303:326" ph="SELECT * FRO... southwest" />
+            <marker date="1540395818200" expanded="true" signature="431:556" ph="insert into southwest... " />
+            <marker date="1540395818200" expanded="true" signature="633:709" ph="delete from southwest... " />
+            <marker date="1540395818200" expanded="true" signature="817:1069" ph="update southwest... " />
+            <marker date="1540395818200" expanded="true" signature="1206:1284" ph="select * fro... southwest" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/service/sw_architectureService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_music/dao/MusicMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_music/service/MusicServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="177">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="method#getContentByInstrumentsa#0;class#MusicServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_village/controller/sw_VillageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="124" column="48" lean-forward="false" selection-start-line="124" selection-start-column="48" selection-end-line="124" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muc_music/controller/MusicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="134" column="32" lean-forward="true" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#4372#4373#0" expanded="true" />
+            <element signature="e#4410#4411#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -19,4 +19,24 @@ public class MusicServiceImpl implements MusicService {
     public MusicInfo getContentByID(int MusicID) {
         return musicMapper.getContentByID(MusicID);
     }
+
+    public ArrayList<MusicInfo> getContentByNation(String Nation){
+    return musicMapper.getContentByNation(Nation);
+    }
+
+    public ArrayList<MusicInfo> getContentByArea(String Area) {
+        return musicMapper.getContentByArea(Area);
+    }
+
+    public ArrayList<MusicInfo> getContentByInstrumentsa(String Instruments) {
+        return musicMapper.getContentByInstrumentsa(Instruments);
+    }
+
+    public ArrayList<MusicInfo> getContentBySinger(String Singer) {
+        return musicMapper.getContentBySinger(Singer);
+    }
+
+    public ArrayList<MusicInfo> getContentByStyle(String Style) {
+        return musicMapper.getContentByStyle(Style);
+    }
 }
