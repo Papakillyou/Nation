@@ -33,7 +33,7 @@ public class UserController {
     //进入网站首页
     @RequestMapping("/muc")//首页，只实现“数据更新”模块
     public ModelAndView getModelAndView(@RequestParam(value="pn",defaultValue="1")Integer pn) {
-        DbcontextHolder.setDbType("muc_village");
+        DbcontextHolder.setDbType("dataSourcemuc_village");
         ModelAndView mv = null;
         PageHelper.startPage(pn, 5);
         mv = new ModelAndView("sw_village");
@@ -49,7 +49,7 @@ public class UserController {
     //用户注册
     @RequestMapping("regist")
     public String regist(UserInfo user, Model model) {
-        DbcontextHolder.setDbType("muc");
+        DbcontextHolder.setDbType("dataSourcemuc");
         System.out.println("用户注册：" + user.getUserName() + user.getPassWord());
         user.setUserID(1);
         userService.regist(user);
@@ -62,24 +62,25 @@ public class UserController {
     @RequestMapping("login")
     public String login(String name,String password,Model model)
     {
+        DbcontextHolder.setDbType("dataSourcemuc");
         System.out.println("用户登录："+name+password);
         userService.login(name,password);
         model.addAttribute("msg", "登录成功");
-        return "success";
+        return "success";//登陆成功jsp名字
     }
     //进入村寨首页
     @RequestMapping("/village")
     public String returnVillage()
     {
-        DbcontextHolder.setDbType("muc_village");
-        return "village";
+        DbcontextHolder.setDbType("dataSourcemuc_village");
+        return "village";//村寨首页jsp名字
     }
     //进入音樂首页
     @RequestMapping("/music")
     public String returnMusic()
     {
-        DbcontextHolder.setDbType("muc_village");
-        return "village";
+        DbcontextHolder.setDbType("dataSourcemuc_music");
+        return "music";//音乐首页jsp名字
     }
 
 

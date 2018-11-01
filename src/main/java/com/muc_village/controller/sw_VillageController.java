@@ -5,6 +5,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.muc_village.pojo.*;
 import com.muc_village.service.*;
+import com.mysql.operation.DbcontextHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 
 @Controller
 public class sw_VillageController {
+
     @Autowired
     private sw_VillageService sw_villageService = null;
     @Autowired
@@ -41,6 +43,7 @@ public class sw_VillageController {
     @RequestMapping("/village")
     public ModelAndView getModelAndView(@RequestParam(value="pn",defaultValue="1")Integer pn)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_village");
         ModelAndView mv = null;
         //从第一条开始 每页查询五条数据
         PageHelper.startPage(pn, 5);
@@ -102,6 +105,7 @@ public class sw_VillageController {
     //进入村寨详情页----建筑特色
     @RequestMapping("/read_sw_architecture")
     public ModelAndView readData_architecture(int id) {
+        DbcontextHolder.setDbType("dataSourcemuc_village");
         ModelAndView mv = null;
         try {
             mv = new ModelAndView("read_sw_architecture");
@@ -120,6 +124,7 @@ public class sw_VillageController {
     @RequestMapping("/read_esthetics")
     public ModelAndView readData_esthetics(int id)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_village");
         ModelAndView mv=null;
         try{
             mv=new ModelAndView("sw_esthetics");
@@ -137,6 +142,7 @@ public class sw_VillageController {
     @RequestMapping("/read_ecology")
     public ModelAndView readData_ecology(int id)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_village");
         ModelAndView mv=null;
         try{
             mv=new ModelAndView("sw_ecology");
@@ -156,6 +162,7 @@ public class sw_VillageController {
     @RequestMapping("/read_culture")
     public ModelAndView readData_culture(int id)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_village");
         ModelAndView mv=null;
         try{
             mv=new ModelAndView("sw_culture");

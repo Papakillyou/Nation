@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.muc_music.pojo.MusicInfo;
 import com.muc_music.service.MusicService;
+import com.mysql.operation.DbcontextHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +27,7 @@ public class MusicController {
     @RequestMapping("/allmusic")
     public ModelAndView getAllMusic(@RequestParam(value="pn",defaultValue="1")Integer pn)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_music");
         ModelAndView mv = null;
         //从第一条开始 每页查询12条数据
         PageHelper.startPage(pn, 12);
@@ -43,6 +45,7 @@ public class MusicController {
     @RequestMapping("/areamusic")
     public ModelAndView getAreaMusic(@RequestParam(value="pn",defaultValue="1")Integer pn,String Area)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_music");
         ModelAndView mv = null;
         //从第一条开始 每页查询12条数据
         PageHelper.startPage(pn, 12);
@@ -60,6 +63,7 @@ public class MusicController {
     @RequestMapping("/nationmusic")
     public ModelAndView getNationMusic(@RequestParam(value="pn",defaultValue="1")Integer pn,String Nation)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_music");
         ModelAndView mv = null;
         //从第一条开始 每页查询12条数据
         PageHelper.startPage(pn, 12);
@@ -77,6 +81,7 @@ public class MusicController {
     @RequestMapping("/stylemusic")
     public ModelAndView getStyleMusic(@RequestParam(value="pn",defaultValue="1")Integer pn,String Style)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_music");
         ModelAndView mv = null;
         //从第一条开始 每页查询12条数据
         PageHelper.startPage(pn, 12);
@@ -94,6 +99,7 @@ public class MusicController {
     @RequestMapping("/instrumentsamusic")
     public ModelAndView getInstrumentsaMusic(@RequestParam(value="pn",defaultValue="1")Integer pn,String Instrumentsa)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_music");
         ModelAndView mv = null;
         //从第一条开始 每页查询12条数据
         PageHelper.startPage(pn, 12);
@@ -111,6 +117,7 @@ public class MusicController {
     @RequestMapping("/singermusic")
     public ModelAndView getSingerMusic(@RequestParam(value="pn",defaultValue="1")Integer pn,String Singer)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_music");
         ModelAndView mv = null;
         //从第一条开始 每页查询12条数据
         PageHelper.startPage(pn, 12);
@@ -128,6 +135,7 @@ public class MusicController {
     //进入音乐详情
     @RequestMapping("/idmusic")
     public String intoMusic(){
+        DbcontextHolder.setDbType("dataSourcemuc_music");
         return "";//音乐详情页的jsp名字
     }
 
@@ -135,6 +143,7 @@ public class MusicController {
     @RequestMapping("/idmusic1")
     public ModelAndView getIDMusic(int id)
     {
+        DbcontextHolder.setDbType("dataSourcemuc_music");
         ModelAndView mv=null;
         try{
             mv=new ModelAndView("musicplay");//jsp名字
