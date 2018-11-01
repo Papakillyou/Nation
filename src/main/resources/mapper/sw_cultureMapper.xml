@@ -7,8 +7,8 @@
   </select>
 
   <select id="getContent" parameterType="java.lang.Integer" resultType="com.muc_village.pojo.sw_cultureInfo">
-    select * from southwest_culture
-    where SouthwestVillageID=#{SouthwestVillageID}
-  </select>
+  select * from southwest_culture
+  where SouthwestVillageID=#{SouthwestVillageID}
+</select>
 
 </mapper>

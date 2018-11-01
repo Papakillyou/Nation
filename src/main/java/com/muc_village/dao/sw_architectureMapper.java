@@ -12,4 +12,5 @@ public interface sw_architectureMapper {
     boolean deleteArchitecture(int SouthwestVillageID);         //根据id删除数据库中一条建筑特色详情
     boolean updateArchitecture(sw_architectureInfo sw_villageInfo);    //根据id更新数据库中建筑特色详情
     sw_architectureInfo getContent(int SouthwestVillageID);     //根据id获得建筑特色内容详情
+    ArrayList<sw_architectureInfo> getContent1(String BudingForm);
 }

@@ -34,4 +34,9 @@ public class sw_architectureServiceImpl implements sw_architectureService{
     {
         return sw_architecturemapper.getContent(SouthwestVillageID);
     }//根据id获得该村子的内容
+
+    public ArrayList<sw_architectureInfo> getContent1(String BudingForm)
+    {
+        return sw_architecturemapper.getContent1(BudingForm);
+    }
 }

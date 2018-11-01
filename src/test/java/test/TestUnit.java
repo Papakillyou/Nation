@@ -9,6 +9,7 @@ import com.mysql.operation.DbcontextHolder;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class TestUnit extends baseTest {
@@ -24,8 +25,7 @@ public class TestUnit extends baseTest {
     @Test
     public void testget() {
         DbcontextHolder.setDbType("dataSourcemuc_village");
-        sw_architectureInfo sw=new sw_architectureInfo();
-        sw=sw_architectureService.getContent(1);
+        ArrayList<sw_architectureInfo> sw=sw_architectureService.getContent1("11");
 
         logger.info(JSON.toJSONString(sw));
 

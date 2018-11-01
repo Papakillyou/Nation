@@ -32,6 +32,9 @@
         where SouthwestVillageID=#{SouthwestVillageID}
     </select>
 
-
+    <select id="getContent1" parameterType="java.lang.String" resultType="com.muc_village.pojo.sw_architectureInfo">
+        select * from southwest_architecture
+        where BuildingForm=#{BuildingForm}
+    </select>
 
 </mapper>
